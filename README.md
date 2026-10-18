@@ -4,6 +4,12 @@
   <img src="assets/teaser.png" alt="Distillation overshoot" width="100%">
 </p>
 
+**Figure 1:** Understanding and preserving distillation overshoot. (a) Ordinary OPD students can substantially surpass
+their teachers mid-training, but then regress as training continues. (b) OPD affects decisions unevenly: repair of the
+student's weak decisions initially outpaces erosion of its own successful choices, producing overshoot; continued
+distillation then erodes those choices, driving regression. (c) SPOD withholds conflicting supervision on successful
+choices, preserving and extending gains in all settings, effectively curbing regression.
+
 ## Overview
 
 On-policy distillation (OPD) trains an agent on its own trajectories, with supervision from a stronger teacher. In
