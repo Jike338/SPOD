@@ -1,0 +1,34 @@
+{
+  "package": "webshop_scienceworld",
+  "student": "google/gemma-4-E4B-it",
+  "student_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+  "teacher": "google/gemma-4-31B-it",
+  "teacher_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "data": {
+    "train": "data/scienceworld/train.json",
+    "eval": "data/scienceworld/test.json"
+  },
+  "env": "scienceworld",
+  "seed": 20261011,
+  "lr": 1e-05,
+  "final_lr": 1e-06,
+  "schedule": "cosine",
+  "warmup_updates": 3,
+  "schedule_updates": 40,
+  "end_updates": 40,
+  "gradient_clip": 1.0,
+  "max_steps": 100,
+  "response_tokens": 80,
+  "context_limit": 12000,
+  "eval_seeds": [
+    20260916,
+    20260917,
+    20260918
+  ],
+  "eval_every": 5,
+  "rollout_memory": 0.85,
+  "adam_cpu_offload": true,
+  "save_model_updates": [],
+  "rolling_save_every": 5,
+  "sg_tau": 0.5
+}

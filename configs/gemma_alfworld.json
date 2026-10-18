@@ -1,0 +1,36 @@
+{
+  "package": "alfworld_gemma",
+  "student": "google/gemma-4-E4B-it",
+  "student_revision": "ee0ef6023621cff504d758262d4e04895a5af4a2",
+  "teacher": "google/gemma-4-31B-it",
+  "teacher_revision": "842da3794eaa0b77d5f08bae87a17459d91ff475",
+  "data": {
+    "train": "data/alfworld/train_gemma.json",
+    "seen": "data/alfworld/valid_seen.json",
+    "unseen": "data/alfworld/valid_unseen.json"
+  },
+  "seed": 20261011,
+  "objective": "fkl",
+  "lr": 1e-05,
+  "final_lr": 1e-06,
+  "schedule": "cosine",
+  "warmup_updates": 3,
+  "schedule_updates": 50,
+  "end_updates": 50,
+  "gradient_clip": 1,
+  "max_steps": 50,
+  "response_tokens": 80,
+  "context_limit": 12000,
+  "eval_seeds": [
+    20260916,
+    20260917,
+    20260918
+  ],
+  "eval_every": 5,
+  "rollout_memory": 0.9,
+  "adam_cpu_offload": true,
+  "checkpoint_updates": [
+    50
+  ],
+  "sg_tau": 0.5
+}

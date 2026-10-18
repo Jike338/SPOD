@@ -1,0 +1,34 @@
+{
+  "package": "alfworld_qwen",
+  "student": "Qwen/Qwen3.5-2B",
+  "student_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "teacher": "Qwen/Qwen3.5-27B",
+  "teacher_revision": "fc05daec18b0a78c049392ed2e771dde82bdf654",
+  "data": {
+    "train": "data/alfworld/train_qwen.json",
+    "seen": "data/alfworld/valid_seen.json",
+    "unseen": "data/alfworld/valid_unseen.json"
+  },
+  "seed": 11,
+  "eval_seed": 20260916,
+  "lr": 1e-05,
+  "batch_size": 72,
+  "updates": 50,
+  "tasks": 3553,
+  "max_steps": 50,
+  "context_limit": 12000,
+  "states_per_task": 8,
+  "milestones": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50
+  ],
+  "sg_tau": 0.5
+}

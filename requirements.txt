@@ -1,0 +1,12 @@
+# Training environment (Python 3.11, CUDA GPUs). Versions used for the paper runs.
+torch==2.13.0
+transformers==5.17.0
+vllm==0.30.0
+accelerate==1.15.0
+safetensors==0.8.0
+xgrammar==0.2.8
+flash-linear-attention==0.5.2   # Qwen3.5 linear-attention kernels
+causal-conv1d==1.7.0
+huggingface_hub
+numpy
+pyyaml
