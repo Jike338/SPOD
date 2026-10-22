@@ -1,6 +1,6 @@
 # Beyond the Teacher: Understanding and Preserving Distillation Overshoot in Agentic On-Policy Distillation
 
-**This repository provides the source code for our paper [*Beyond the Teacher: Understanding and Preserving Distillation Overshoot in Agentic On-Policy Distillation*](#beyond-the-teacher-understanding-and-preserving-distillation-overshoot-in-agentic-on-policy-distillation).**
+**This repository provides the source code for our paper [*Beyond the Teacher: Understanding and Preserving Distillation Overshoot in Agentic On-Policy Distillation*](https://arxiv.org/abs/2610.25034).**
 
 <p align="center">
   <img src="assets/teaser.png" alt="Distillation overshoot" width="100%">
